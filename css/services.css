@@ -1,0 +1,1172 @@
+/* =====================================
+   SERVICES PAGE HERO
+===================================== */
+
+.services-page-hero{
+    position:relative;
+    overflow:hidden;
+
+    padding:110px 0 95px;
+
+    text-align:center;
+
+    background-color:#FBFAF6;
+
+    background-image:
+        repeating-conic-gradient(
+            from 270deg at 50% 100%,
+            transparent 0deg 7deg,
+            rgba(214,170,69,.28) 7deg 8.5deg
+        );
+
+    background-size:240px 180px;
+
+    border-top:1px solid rgba(214,170,69,.35);
+    border-bottom:1px solid rgba(214,170,69,.55);
+}
+
+.services-page-hero::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    pointer-events:none;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.72),
+            rgba(255,255,255,.36) 50%,
+            rgba(255,255,255,.72)
+        );
+}
+
+.services-page-hero .container{
+    position:relative;
+    z-index:2;
+
+    max-width:980px;
+}
+
+.services-page-hero .section-label{
+    color:#D62828;
+
+    font-size:12px;
+    font-weight:800;
+
+    letter-spacing:2.2px;
+
+    text-transform:uppercase;
+}
+
+.services-page-hero h1{
+    max-width:880px;
+
+    margin:18px auto 24px;
+
+    color:#0A2540;
+
+    font-family:Georgia, "Times New Roman", serif;
+
+    font-size:58px;
+    line-height:1.08;
+
+    letter-spacing:-1px;
+}
+
+.services-page-hero p{
+    max-width:760px;
+
+    margin:0 auto;
+
+    color:#4F5D6A;
+
+    font-size:18px;
+    line-height:1.85;
+}
+
+.services-hero-actions{
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    margin-top:34px;
+}
+
+.services-page-hero .primary-btn,
+.services-page-hero .secondary-btn{
+    min-height:54px;
+
+    padding:15px 26px;
+
+    font-size:14px;
+    font-weight:800;
+}
+
+.services-page-hero .secondary-btn{
+    border:2px solid #0A2540;
+
+    background:#FFF;
+
+    color:#0A2540;
+}
+
+.services-page-hero .secondary-btn:hover{
+    background:#0A2540;
+
+    color:#FFF;
+}
+
+
+/* =====================================
+   SERVICES HERO RESPONSIVE
+===================================== */
+
+@media(max-width:700px){
+
+    .services-page-hero{
+        padding:80px 0 70px;
+    }
+
+    .services-page-hero h1{
+        font-size:40px;
+    }
+
+    .services-page-hero p{
+        font-size:16px;
+    }
+
+    .services-hero-actions{
+        flex-direction:column;
+    }
+
+    .services-page-hero .primary-btn,
+    .services-page-hero .secondary-btn{
+        width:100%;
+    }
+
+}
+
+/* =====================================
+   SERVICES OVERVIEW
+===================================== */
+
+.services-overview{
+    padding:105px 0 115px;
+    background:#FFFDF9;
+}
+
+.services-overview .section-title{
+    max-width:860px;
+    margin:0 auto 60px;
+}
+
+.services-overview .section-title h2{
+    margin-top:10px;
+    color:#0A2540;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:46px;
+    line-height:1.18;
+}
+
+.services-overview .section-title p{
+    max-width:760px;
+    color:#66727E;
+}
+
+
+/* =====================================
+   SERVICES GRID
+===================================== */
+
+.services-page-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:28px;
+}
+
+
+/* =====================================
+   SERVICE CARD
+===================================== */
+
+.service-detail-card{
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+
+    min-width:0;
+    min-height:430px;
+
+    padding:34px 30px;
+
+    border:1px solid rgba(214,170,69,.60);
+    border-radius:12px;
+
+    background:#FFF;
+
+    box-shadow:
+        0 14px 32px rgba(10,37,64,.08);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.service-detail-card::before,
+.service-detail-card::after{
+    content:"";
+    position:absolute;
+
+    width:24px;
+    height:24px;
+
+    border-color:#D6AA45;
+
+    pointer-events:none;
+}
+
+.service-detail-card::before{
+    top:9px;
+    left:9px;
+
+    border-top:2px solid;
+    border-left:2px solid;
+}
+
+.service-detail-card::after{
+    right:9px;
+    bottom:9px;
+
+    border-right:2px solid;
+    border-bottom:2px solid;
+}
+
+.service-detail-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#D6AA45;
+
+    box-shadow:
+        0 24px 48px rgba(10,37,64,.14);
+}
+
+
+/* =====================================
+   ICON
+===================================== */
+
+.service-detail-icon{
+    width:64px;
+    height:64px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:22px;
+
+    border:2px solid #D6AA45;
+    border-radius:50%;
+
+    background:#0A2540;
+
+    color:#D6AA45;
+
+    font-size:25px;
+}
+
+
+/* =====================================
+   CARD TEXT
+===================================== */
+
+.service-detail-card h3{
+    margin-bottom:14px;
+
+    color:#0A2540;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:23px;
+    line-height:1.2;
+}
+
+.service-detail-card > p{
+    margin-bottom:22px;
+
+    color:#5F6872;
+
+    font-size:15px;
+    line-height:1.75;
+}
+
+
+/* =====================================
+   SERVICE LIST
+===================================== */
+
+.service-detail-card ul{
+    display:grid;
+    gap:10px;
+
+    margin:0 0 26px;
+    padding:0;
+
+    list-style:none;
+}
+
+.service-detail-card li{
+    position:relative;
+
+    padding-left:24px;
+
+    color:#4F5B66;
+
+    font-size:14px;
+    line-height:1.55;
+}
+
+.service-detail-card li::before{
+    content:"\f058";
+
+    position:absolute;
+
+    left:0;
+    top:2px;
+
+    color:#D62828;
+
+    font-family:"Font Awesome 6 Free";
+    font-weight:900;
+}
+
+
+/* =====================================
+   SERVICE LINK
+===================================== */
+
+.service-detail-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    margin-top:auto;
+
+    color:#D62828;
+
+    text-decoration:none;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.service-detail-link i{
+    transition:transform .25s ease;
+}
+
+.service-detail-link:hover{
+    color:#B51F1F;
+}
+
+.service-detail-link:hover i{
+    transform:translateX(5px);
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:1000px){
+
+    .services-page-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+}
+
+@media(max-width:650px){
+
+    .services-overview{
+        padding:80px 0;
+    }
+
+    .services-overview .section-title h2{
+        font-size:35px;
+    }
+
+    .services-page-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-detail-card{
+        min-height:auto;
+        padding:30px 24px;
+    }
+
+}
+/* =====================================
+   WHY WORK WITH US
+===================================== */
+
+.services-benefits-section{
+    position:relative;
+    overflow:hidden;
+
+    padding:110px 0;
+
+    background:#0A2540;
+
+    background-image:
+        repeating-conic-gradient(
+            from 270deg at 50% 100%,
+            transparent 0deg 8deg,
+            rgba(214,170,69,.08) 8deg 9deg
+        );
+
+    background-size:240px 180px;
+}
+
+
+/* =====================================
+   TWO COLUMN LAYOUT
+===================================== */
+
+.services-benefits-grid{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1.05fr)
+        minmax(360px,.95fr);
+
+    gap:80px;
+
+    align-items:center;
+}
+
+
+/* =====================================
+   LEFT CONTENT
+===================================== */
+
+.services-benefits-content .section-label{
+    color:#E7C97A;
+
+    font-size:12px;
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+.services-benefits-content h2{
+    max-width:650px;
+
+    margin:16px 0 24px;
+
+    color:#FFFFFF;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:48px;
+
+    line-height:1.15;
+}
+
+.services-benefits-content > p{
+    max-width:650px;
+
+    margin-bottom:30px;
+
+    color:#D7E0E8;
+
+    font-size:17px;
+
+    line-height:1.8;
+}
+
+
+/* =====================================
+   BENEFIT CHECKLIST
+===================================== */
+
+.services-benefit-list{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:17px 26px;
+
+    margin-bottom:36px;
+}
+
+.services-benefit-list div{
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:11px;
+
+    color:#FFFFFF;
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.services-benefit-list i{
+    margin-top:4px;
+
+    color:#D6AA45;
+
+    font-size:16px;
+}
+
+
+/* CTA BUTTON */
+
+.services-benefits-content .primary-btn{
+    border-color:#D62828;
+
+    background:#D62828;
+
+    color:#FFFFFF;
+
+    box-shadow:
+        0 14px 30px rgba(0,0,0,.20);
+}
+
+.services-benefits-content .primary-btn:hover{
+    background:#B51F1F;
+
+    border-color:#B51F1F;
+
+    transform:translateY(-3px);
+}
+
+
+/* =====================================
+   RIGHT SIDE CARDS
+===================================== */
+
+.services-benefits-cards{
+    display:grid;
+
+    gap:20px;
+}
+
+.services-benefits-cards article{
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:26px 28px;
+
+    border:
+        1px solid rgba(214,170,69,.60);
+
+    border-radius:14px;
+
+    background:
+        rgba(255,255,255,.07);
+
+    box-shadow:
+        0 14px 34px rgba(0,0,0,.14);
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        border-color .3s ease;
+}
+
+.services-benefits-cards article:hover{
+    transform:translateX(8px);
+
+    border-color:#D6AA45;
+
+    background:
+        rgba(255,255,255,.11);
+}
+
+
+/* ICON */
+
+.services-benefits-cards article > i{
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex:0 0 58px;
+
+    border:2px solid #D6AA45;
+
+    border-radius:50%;
+
+    background:#FFFFFF;
+
+    color:#0A2540;
+
+    font-size:22px;
+}
+
+
+/* CARD TEXT */
+
+.services-benefits-cards h3{
+    margin-bottom:7px;
+
+    color:#FFFFFF;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:20px;
+}
+
+.services-benefits-cards p{
+    color:#D7E0E8;
+
+    font-size:14px;
+
+    line-height:1.65;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media(max-width:1000px){
+
+    .services-benefits-grid{
+        grid-template-columns:1fr;
+
+        gap:55px;
+    }
+
+    .services-benefits-content{
+        text-align:center;
+    }
+
+    .services-benefits-content h2,
+    .services-benefits-content > p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .services-benefit-list{
+        max-width:700px;
+
+        margin-left:auto;
+        margin-right:auto;
+
+        text-align:left;
+    }
+
+    .services-benefits-cards{
+        max-width:760px;
+
+        margin:auto;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:650px){
+
+    .services-benefits-section{
+        padding:80px 0;
+    }
+
+    .services-benefits-content h2{
+        font-size:35px;
+    }
+
+    .services-benefit-list{
+        grid-template-columns:1fr;
+    }
+
+    .services-benefits-cards article{
+        padding:22px 20px;
+    }
+
+    .services-benefits-cards article:hover{
+        transform:translateY(-4px);
+    }
+
+}
+
+/* =====================================
+   SERVICES FAQ
+===================================== */
+
+.services-faq{
+    padding:105px 0;
+    background:#FFFFFF;
+}
+
+.services-faq .section-title{
+    max-width:820px;
+    margin:0 auto 55px;
+}
+
+.services-faq .section-title h2{
+    margin-top:10px;
+
+    color:#0A2540;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:44px;
+    line-height:1.2;
+}
+
+.services-faq .section-title p{
+    max-width:700px;
+
+    color:#66727E;
+}
+
+
+/* =====================================
+   FAQ CONTAINER
+===================================== */
+
+.services-faq .faq-container{
+    display:grid;
+
+    gap:16px;
+
+    max-width:900px;
+
+    margin:0 auto;
+}
+
+
+/* =====================================
+   FAQ ITEM
+===================================== */
+
+.services-faq .faq-item{
+    overflow:hidden;
+
+    border:1px solid #E3E9EF;
+
+    border-radius:12px;
+
+    background:#FFFFFF;
+
+    box-shadow:
+        0 10px 26px rgba(10,37,64,.06);
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.services-faq .faq-item:hover{
+    border-color:rgba(214,170,69,.70);
+
+    box-shadow:
+        0 16px 32px rgba(10,37,64,.09);
+}
+
+
+/* =====================================
+   FAQ QUESTION
+===================================== */
+
+.services-faq .faq-question{
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:22px 24px;
+
+    border:0;
+
+    background:#FFFFFF;
+
+    color:#0A2540;
+
+    text-align:left;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:15px;
+    font-weight:700;
+
+    cursor:pointer;
+}
+
+.services-faq .faq-question span{
+    flex:1;
+}
+
+
+/* PLUS BUTTON */
+
+.services-faq .faq-question i{
+    width:34px;
+    height:34px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex:0 0 34px;
+
+    border-radius:50%;
+
+    background:rgba(214,40,40,.10);
+
+    color:#D62828;
+
+    font-size:14px;
+
+    transition:
+        transform .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+
+/* OPEN STATE */
+
+.services-faq .faq-question[aria-expanded="true"] i{
+    transform:rotate(45deg);
+
+    background:#D62828;
+
+    color:#FFFFFF;
+}
+
+
+/* =====================================
+   FAQ ANSWER
+===================================== */
+
+.services-faq .faq-answer{
+    display:none;
+
+    padding:
+        0
+        24px
+        24px;
+}
+
+.services-faq .faq-question[aria-expanded="true"]
++ .faq-answer{
+    display:block;
+}
+
+.services-faq .faq-answer p{
+    margin:0;
+
+    padding-top:18px;
+
+    border-top:
+        1px solid #EEF1F4;
+
+    color:#5F6872;
+
+    font-size:15px;
+
+    line-height:1.8;
+}
+
+
+/* =====================================
+   FINAL CTA
+===================================== */
+
+.services-faq + .premium-cta{
+    position:relative;
+
+    overflow:hidden;
+
+    padding:95px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0A2540,
+            #16365F
+        );
+
+    color:#FFFFFF;
+}
+
+.services-faq + .premium-cta::before{
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    top:-90px;
+    right:-70px;
+
+    border-radius:50%;
+
+    background:
+        rgba(214,40,40,.12);
+}
+
+.services-faq + .premium-cta::after{
+    content:"";
+
+    position:absolute;
+
+    width:190px;
+    height:190px;
+
+    bottom:-90px;
+    left:8%;
+
+    border-radius:50%;
+
+    background:
+        rgba(214,170,69,.08);
+}
+
+
+/* =====================================
+   CTA GRID
+===================================== */
+
+.services-faq + .premium-cta .cta-grid{
+    position:relative;
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1.05fr)
+        minmax(340px,.95fr);
+
+    gap:70px;
+
+    align-items:center;
+}
+
+
+/* CTA CONTENT */
+
+.services-faq + .premium-cta .section-label{
+    color:#E7C97A;
+}
+
+.services-faq + .premium-cta h2{
+    max-width:650px;
+
+    margin:14px 0 20px;
+
+    color:#FFFFFF;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:46px;
+
+    line-height:1.16;
+}
+
+.services-faq + .premium-cta .cta-content > p{
+    max-width:620px;
+
+    color:#D7E0E8;
+
+    font-size:16px;
+
+    line-height:1.8;
+}
+
+
+/* CTA BUTTONS */
+
+.services-faq + .premium-cta .cta-buttons{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:28px;
+}
+
+.services-faq + .premium-cta .secondary-btn{
+    border-color:#FFFFFF;
+
+    color:#FFFFFF;
+}
+
+.services-faq + .premium-cta .secondary-btn:hover{
+    background:#FFFFFF;
+
+    color:#0A2540;
+}
+
+
+/* =====================================
+   CTA TRUST CARDS
+===================================== */
+
+.services-faq + .premium-cta .cta-trust{
+    display:grid;
+
+    gap:15px;
+}
+
+.services-faq + .premium-cta .cta-trust-item{
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:20px 22px;
+
+    border:
+        1px solid rgba(255,255,255,.20);
+
+    border-radius:12px;
+
+    background:
+        rgba(255,255,255,.07);
+}
+
+.services-faq + .premium-cta .cta-trust-item i{
+    width:44px;
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    flex:0 0 44px;
+
+    border-radius:50%;
+
+    background:#D62828;
+
+    color:#FFFFFF;
+
+    font-size:17px;
+}
+
+.services-faq + .premium-cta .cta-trust-item strong,
+.services-faq + .premium-cta .cta-trust-item span{
+    display:block;
+}
+
+.services-faq + .premium-cta .cta-trust-item strong{
+    margin-bottom:3px;
+
+    color:#FFFFFF;
+
+    font-size:14px;
+}
+
+.services-faq + .premium-cta .cta-trust-item span{
+    color:#D7E0E8;
+
+    font-size:12px;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:900px){
+
+    .services-faq + .premium-cta .cta-grid{
+        grid-template-columns:1fr;
+
+        gap:45px;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .services-faq{
+        padding:80px 0;
+    }
+
+    .services-faq .section-title h2{
+        font-size:34px;
+    }
+
+    .services-faq .faq-question{
+        padding:18px 18px;
+
+        font-size:14px;
+    }
+
+    .services-faq .faq-answer{
+        padding:
+            0
+            18px
+            20px;
+    }
+
+    .services-faq + .premium-cta{
+        padding:80px 0;
+    }
+
+    .services-faq + .premium-cta h2{
+        font-size:35px;
+    }
+
+    .services-faq + .premium-cta .cta-buttons{
+        flex-direction:column;
+    }
+
+    .services-faq + .premium-cta .primary-btn,
+    .services-faq + .premium-cta .secondary-btn{
+        width:100%;
+    }
+
+}

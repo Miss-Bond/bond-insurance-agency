@@ -1,0 +1,308 @@
+/* =====================================
+   BOND INSURANCE AGENCY OF RVA
+   GLOBAL RESPONSIVE OVERRIDES
+   responsive.css
+
+   Load this file LAST.
+
+   Purpose:
+   - Site-wide breakpoint adjustments
+   - Navigation/mobile menu structure
+   - Shared container/button/form behavior
+   - Cross-page responsive fixes
+
+   Section-specific responsive rules stay
+   inside hero.css, advisor.css, services.css,
+   learning.css, portrait.css, and footer.css.
+===================================== */
+
+
+/* =====================================
+   LARGE TABLET / SMALL DESKTOP
+===================================== */
+
+@media(max-width:1050px){
+
+    .container{
+        width:min(94%,1180px);
+    }
+
+}
+
+
+/* =====================================
+   TABLET NAVIGATION
+===================================== */
+
+@media(max-width:900px){
+
+    body{
+        padding-top:90px;
+    }
+
+    header{
+        min-height:90px;
+    }
+
+    .nav{
+        position:relative;
+        height:90px;
+        gap:20px;
+    }
+
+    .logo{
+        height:90px;
+        max-width:250px;
+    }
+
+    .menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:48px;
+        height:48px;
+        flex:0 0 48px;
+        border:0;
+        background:transparent;
+        color:#0A2540;
+        font-size:27px;
+        cursor:pointer;
+    }
+
+    .nav-menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        right:0;
+        z-index:1001;
+
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+
+        padding:12px 0 18px;
+
+        border-top:1px solid #E3E9EF;
+
+        background:#FFF;
+
+        box-shadow:
+            0 16px 30px rgba(10,37,64,.12);
+    }
+
+    .nav-menu.active{
+        display:flex;
+    }
+
+    .nav-menu a{
+        width:100%;
+        padding:14px 24px;
+    }
+
+    .nav-menu .quote-button{
+        width:calc(100% - 48px);
+        margin:8px 24px 0;
+        text-align:center;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:650px){
+
+    body{
+        padding-top:75px;
+    }
+
+    header{
+        min-height:75px;
+    }
+
+    .container{
+        width:92%;
+    }
+
+    .nav{
+        height:75px;
+        gap:14px;
+    }
+
+    .logo{
+        height:60px;
+        max-width:210px;
+    }
+
+    .menu-toggle{
+        width:44px;
+        height:44px;
+        flex-basis:44px;
+        font-size:24px;
+    }
+
+    .nav-menu a{
+        padding:13px 20px;
+    }
+
+    .nav-menu .quote-button{
+        width:calc(100% - 40px);
+        margin:8px 20px 0;
+    }
+
+    .section-title{
+        margin-bottom:42px;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+    .section-title p{
+        font-size:15px;
+    }
+
+    .section-label{
+        font-size:12px;
+        letter-spacing:1.2px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+        min-height:52px;
+        padding:14px 20px;
+        text-align:center;
+    }
+
+    .text-link{
+        line-height:1.5;
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media(max-width:420px){
+
+    .container{
+        width:90%;
+    }
+
+    .logo{
+        height:54px;
+        max-width:185px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+}
+
+
+/* =====================================
+   SHARED FORM RESPONSIVENESS
+===================================== */
+
+@media(max-width:700px){
+
+    .form-row,
+    .checkbox-grid{
+        grid-template-columns:1fr !important;
+    }
+
+    input,
+    select,
+    textarea{
+        max-width:100%;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE ACTION BAR
+===================================== */
+
+.mobile-action-bar{
+    display:none;
+}
+
+@media(max-width:700px){
+
+    body{
+        padding-bottom:72px;
+    }
+
+    .mobile-action-bar{
+        position:fixed;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:2000;
+
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+
+        min-height:68px;
+
+        border-top:1px solid rgba(255,255,255,.15);
+
+        background:#0A2540;
+
+        box-shadow:
+            0 -8px 24px rgba(0,0,0,.18);
+    }
+
+    .mobile-action-bar a{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:5px;
+
+        min-width:0;
+        padding:8px 6px;
+
+        color:#FFF;
+        text-decoration:none;
+
+        font-size:12px;
+        font-weight:700;
+        text-align:center;
+    }
+
+    .mobile-action-bar a + a{
+        border-left:
+            1px solid rgba(255,255,255,.14);
+    }
+
+    .mobile-action-bar i{
+        color:#FFF;
+        font-size:19px;
+    }
+
+    .mobile-action-bar a:nth-child(2){
+        background:#D62828;
+    }
+
+}
+
+
+/* =====================================
+   ACCESSIBILITY / REDUCED MOTION
+===================================== */
+
+@media(prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+}

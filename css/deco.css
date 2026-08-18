@@ -1,0 +1,190 @@
+/* =====================================
+   BOND INSURANCE AGENCY OF RVA
+   SHARED ART DECO UTILITIES
+   deco.css
+===================================== */
+
+/* Gold divider */
+
+.deco-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    width:min(320px,80%);
+    margin:24px auto;
+}
+
+.deco-divider::before,
+.deco-divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#D6AA45;
+}
+
+.deco-divider-mark{
+    width:10px;
+    height:10px;
+    flex:0 0 10px;
+    border:1px solid #D6AA45;
+    transform:rotate(45deg);
+}
+
+/* Reusable corner accents */
+
+.deco-corners{
+    position:relative;
+}
+
+.deco-corners::before,
+.deco-corners::after{
+    content:"";
+    position:absolute;
+    z-index:2;
+    width:24px;
+    height:24px;
+    pointer-events:none;
+}
+
+.deco-corners::before{
+    top:8px;
+    left:8px;
+    border-top:2px solid #D6AA45;
+    border-left:2px solid #D6AA45;
+}
+
+.deco-corners::after{
+    right:8px;
+    bottom:8px;
+    border-right:2px solid #D6AA45;
+    border-bottom:2px solid #D6AA45;
+}
+
+/* Gold outline panel */
+
+.deco-panel{
+    position:relative;
+    border:1px solid rgba(214,170,69,.65);
+    background:#FFF;
+    box-shadow:0 12px 28px rgba(10,37,64,.08);
+}
+
+.deco-panel-inner{
+    position:relative;
+    margin:8px;
+    border:1px solid rgba(214,170,69,.38);
+}
+
+/* Fan background utility */
+
+.deco-fan-pattern{
+    position:relative;
+    overflow:hidden;
+    background-color:#FBFAF6;
+}
+
+.deco-fan-pattern::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    opacity:.18;
+    background-image:
+        repeating-conic-gradient(
+            from 270deg at 50% 100%,
+            transparent 0deg 7deg,
+            rgba(214,170,69,.85) 7deg 8.5deg
+        );
+    background-size:240px 180px;
+    background-position:0 0;
+    background-repeat:repeat;
+}
+
+.deco-fan-pattern > *{
+    position:relative;
+    z-index:1;
+}
+
+/* Small fan ornament */
+
+.deco-fan-ornament{
+    width:160px;
+    height:110px;
+    pointer-events:none;
+    opacity:.7;
+    background:
+        repeating-conic-gradient(
+            from 270deg at 50% 100%,
+            transparent 0deg 8deg,
+            rgba(214,170,69,.88) 8deg 9deg
+        );
+    border-bottom:1px solid #D6AA45;
+}
+
+/* Deco label */
+
+.deco-label{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    color:#D62828;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.deco-label::before,
+.deco-label::after{
+    content:"";
+    width:34px;
+    height:1px;
+    background:#D6AA45;
+}
+
+/* Gold icon medallion */
+
+.deco-icon{
+    width:58px;
+    height:58px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex:0 0 58px;
+    border:2px solid #D6AA45;
+    border-radius:50%;
+    background:#0A2540;
+    color:#D6AA45;
+    font-size:23px;
+}
+
+/* Shared hover lift */
+
+.deco-lift{
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.deco-lift:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 42px rgba(10,37,64,.14);
+}
+
+@media(max-width:650px){
+
+    .deco-label{
+        gap:10px;
+        letter-spacing:1.4px;
+    }
+
+    .deco-label::before,
+    .deco-label::after{
+        width:22px;
+    }
+
+    .deco-fan-ornament{
+        display:none;
+    }
+}

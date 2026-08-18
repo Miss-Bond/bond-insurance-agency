@@ -1,0 +1,261 @@
+
+/* =====================================
+   BOND INSURANCE AGENCY OF RVA
+   GLOBAL FOUNDATION
+   style.css
+===================================== */
+
+/* ---------- Brand Variables ---------- */
+
+:root{
+    --bond-navy:#0A2540;
+    --bond-navy-deep:#071B2D;
+    --bond-red:#D62828;
+    --bond-red-dark:#B91F1F;
+    --bond-gold:#D6AA45;
+    --bond-gold-light:#E7C97A;
+
+    --bond-white:#FFFFFF;
+    --bond-ivory:#FFFCF6;
+    --bond-gray-bg:#F5F7FA;
+    --bond-gray-text:#5F6872;
+    --bond-gray-muted:#6B7280;
+    --bond-border:#E3E9EF;
+
+    --bond-font:"Poppins",sans-serif;
+    --bond-serif:Georgia,"Times New Roman",serif;
+
+    --bond-container:1180px;
+    --bond-radius:8px;
+    --bond-shadow:0 12px 30px rgba(10,37,64,.08);
+
+    --bond-transition:.25s ease;
+}
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    margin:0;
+    background:var(--bond-white);
+    color:var(--bond-navy);
+    font-family:var(--bond-font);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+img,
+picture,
+svg{
+    display:block;
+    max-width:100%;
+}
+
+button,
+input,
+select,
+textarea{
+    font:inherit;
+}
+
+button,
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+
+a{
+    color:inherit;
+    transition:
+        color var(--bond-transition),
+        background-color var(--bond-transition),
+        border-color var(--bond-transition),
+        transform var(--bond-transition),
+        box-shadow var(--bond-transition);
+}
+
+ul,
+ol{
+    padding-left:1.25rem;
+}
+
+/* ---------- Accessibility ---------- */
+
+:focus-visible{
+    outline:3px solid rgba(214,170,69,.65);
+    outline-offset:3px;
+}
+
+[hidden]{
+    display:none !important;
+}
+
+/* ---------- Global Container ---------- */
+
+.container{
+    width:min(var(--bond-container),92%);
+    margin-inline:auto;
+}
+
+/* ---------- Shared Typography ---------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color:var(--bond-navy);
+    line-height:1.2;
+}
+
+p{
+    line-height:1.8;
+}
+
+.section-title{
+    margin-bottom:60px;
+    text-align:center;
+}
+
+.section-title h2{
+    margin-bottom:15px;
+    color:var(--bond-navy);
+    font-size:42px;
+    line-height:1.2;
+}
+
+.section-title p{
+    max-width:700px;
+    margin-inline:auto;
+    color:#666;
+    line-height:1.8;
+}
+
+.section-label{
+    display:inline-block;
+    margin-bottom:15px;
+    color:var(--bond-red);
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+/* ---------- Shared Buttons ---------- */
+
+.primary-btn,
+.secondary-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    min-height:52px;
+    padding:15px 28px;
+    border-radius:var(--bond-radius);
+    text-decoration:none;
+    font-weight:700;
+    line-height:1.2;
+    cursor:pointer;
+}
+
+.primary-btn{
+    border:2px solid var(--bond-red);
+    background:var(--bond-red);
+    color:var(--bond-white);
+}
+
+.primary-btn:visited{
+    color:var(--bond-white);
+}
+
+.primary-btn:hover{
+    border-color:var(--bond-red-dark);
+    background:var(--bond-red-dark);
+    color:var(--bond-white);
+    transform:translateY(-2px);
+}
+
+.secondary-btn{
+    border:2px solid currentColor;
+    background:transparent;
+    color:var(--bond-navy);
+}
+
+.secondary-btn:hover{
+    background:var(--bond-navy);
+    color:var(--bond-white);
+    transform:translateY(-2px);
+}
+
+/* ---------- Shared Text Link ---------- */
+
+.text-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--bond-navy);
+    text-decoration:none;
+    font-weight:700;
+}
+
+.text-link:hover{
+    color:var(--bond-red);
+}
+
+.text-link i{
+    transition:transform var(--bond-transition);
+}
+
+.text-link:hover i{
+    transform:translateX(5px);
+}
+
+/* ---------- Small Shared Utilities ---------- */
+
+.text-center{
+    text-align:center;
+}
+
+.sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+/* ---------- Reduced Motion ---------- */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+        scroll-behavior:auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        animation-duration:.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:.01ms !important;
+        scroll-behavior:auto !important;
+    }
+}

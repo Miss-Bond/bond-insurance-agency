@@ -1,0 +1,270 @@
+/* =====================================
+   BOND INSURANCE AGENCY OF RVA
+   GLOBAL LAYOUT
+   layout.css
+===================================== */
+
+/* =====================================
+   HEADER + NAVIGATION
+===================================== */
+
+body{
+    padding-top:160px;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    background:#fff;
+
+    box-shadow:
+        0 2px 15px rgba(0,0,0,.08);
+}
+
+.nav{
+    height:160px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:40px;
+}
+
+.logo{
+    width:auto;
+    height:160px;
+
+    object-fit:contain;
+}
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+
+    gap:35px;
+}
+
+.nav-menu a{
+    color:#0A2540;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.nav-menu a:hover{
+    color:#D62828;
+}
+
+.nav-menu .quote-button{
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    background:#D62828;
+
+    color:#fff;
+}
+
+.nav-menu .quote-button:hover{
+    background:#B91F1F;
+
+    color:#fff;
+}
+
+/* =====================================
+   MOBILE MENU BUTTON
+===================================== */
+
+.menu-toggle{
+    display:none;
+
+    border:0;
+
+    background:none;
+
+    color:#0A2540;
+
+    font-size:27px;
+
+    cursor:pointer;
+}
+
+/* =====================================
+   GENERIC SECTION STRUCTURE
+===================================== */
+
+section{
+    position:relative;
+}
+
+.page-section{
+    padding:100px 0;
+}
+
+.section-container{
+    width:min(1180px,92%);
+
+    margin-inline:auto;
+}
+
+/* =====================================
+   GENERIC GRID UTILITIES
+===================================== */
+
+.grid-two{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:60px;
+
+    align-items:center;
+}
+
+.grid-three{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:28px;
+}
+
+.grid-four{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
+    gap:24px;
+}
+
+/* =====================================
+   FLEX UTILITIES
+===================================== */
+
+.flex-center{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.flex-between{
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+}
+
+.flex-wrap{
+    display:flex;
+
+    flex-wrap:wrap;
+}
+
+/* =====================================
+   PAGE WIDTH HELPERS
+===================================== */
+
+.content-narrow{
+    width:min(900px,92%);
+
+    margin-inline:auto;
+}
+
+.content-medium{
+    width:min(1050px,92%);
+
+    margin-inline:auto;
+}
+
+.content-wide{
+    width:min(1280px,94%);
+
+    margin-inline:auto;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media(max-width:900px){
+
+    body{
+        padding-top:90px;
+    }
+
+    .nav{
+        height:90px;
+    }
+
+    .logo{
+        height:90px;
+    }
+
+    .nav-menu{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .grid-two{
+        grid-template-columns:1fr;
+
+        gap:45px;
+    }
+
+    .grid-three{
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+    }
+
+    .grid-four{
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+    }
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:650px){
+
+    body{
+        padding-top:75px;
+    }
+
+    .nav{
+        height:75px;
+
+        gap:18px;
+    }
+
+    .logo{
+        height:60px;
+    }
+
+    .page-section{
+        padding:75px 0;
+    }
+
+    .grid-three,
+    .grid-four{
+        grid-template-columns:1fr;
+    }
+
+}

@@ -1,0 +1,212 @@
+/* =====================================
+   BOND INSURANCE AGENCY OF RVA
+   FOOTER
+   footer.css
+===================================== */
+
+.site-footer{
+    width:100%;
+    padding:75px 0 0;
+    background:#071B2D;
+    color:#FFF;
+}
+
+.site-footer .footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:55px;
+    align-items:start;
+    padding-bottom:60px;
+}
+
+.site-footer .footer-about{
+    min-width:0;
+}
+
+.site-footer .footer-logo{
+    width:310px;
+    max-width:100%;
+    margin-bottom:22px;
+    padding:3px;
+    border-radius:10px;
+    background:#FFF;
+}
+
+.site-footer .footer-about > p{
+    max-width:420px;
+    margin-bottom:22px;
+    color:#C9D3DC;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.site-footer h4{
+    margin-bottom:22px;
+    color:#FFF;
+    font-size:19px;
+    font-weight:700;
+}
+
+.site-footer ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.site-footer li{
+    margin-bottom:13px;
+}
+
+.site-footer a,
+.site-footer a:link,
+.site-footer a:visited{
+    color:#FFF;
+    text-decoration:none;
+    transition:
+        color .25s ease,
+        transform .25s ease;
+}
+
+.site-footer a:hover{
+    color:#FF6B6B;
+}
+
+.site-footer a:focus-visible{
+    outline:2px solid #FFF;
+    outline-offset:4px;
+}
+
+/* =====================================
+   FOOTER CONTACT
+===================================== */
+
+.site-footer .footer-contact{
+    display:grid;
+    gap:13px;
+    margin-top:24px;
+}
+
+.site-footer .footer-contact p{
+    display:flex;
+    align-items:flex-start;
+    gap:11px;
+    margin:0;
+    color:#FFF;
+    line-height:1.6;
+}
+
+.site-footer .footer-contact i{
+    width:20px;
+    flex:0 0 20px;
+    margin-top:3px;
+    color:#D62828;
+    text-align:center;
+}
+
+/* =====================================
+   SOCIAL LINKS
+===================================== */
+
+.site-footer .social-links{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.site-footer .social-links a{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:50%;
+    background:rgba(255,255,255,.04);
+}
+
+.site-footer .social-links a:hover{
+    transform:translateY(-3px);
+    border-color:#D62828;
+    background:#D62828;
+    color:#FFF;
+}
+
+/* =====================================
+   FOOTER BOTTOM BAR
+===================================== */
+
+.site-footer .footer-bottom{
+    margin-top:0;
+    padding:24px 0;
+    border-top:1px solid rgba(255,255,255,.12);
+    background:rgba(0,0,0,.08);
+}
+
+.site-footer .footer-bottom-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.site-footer .footer-bottom p{
+    margin:0;
+    color:#AEBBC6;
+}
+
+.site-footer .footer-bottom-content > div{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.site-footer .footer-bottom span{
+    color:#687789;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media(max-width:1000px){
+
+    .site-footer .footer-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:650px){
+
+    .site-footer{
+        padding-top:60px;
+    }
+
+    .site-footer .footer-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .site-footer .footer-logo{
+        width:260px;
+    }
+
+    .site-footer .footer-about > p{
+        font-size:16px;
+    }
+
+    .site-footer .footer-bottom-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .site-footer .footer-bottom-content > div{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+}

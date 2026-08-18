@@ -1,0 +1,186 @@
+/* =====================================
+   BOND INSURANCE AGENCY OF RVA
+   ANIMATIONS
+   animations.css
+===================================== */
+
+/* =====================================
+   FADE UP
+===================================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.fade-up{
+    animation:fadeUp .8s ease both;
+}
+
+/* =====================================
+   FADE IN
+===================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+.fade-in{
+    animation:fadeIn .8s ease both;
+}
+
+/* =====================================
+   SLIDE LEFT
+===================================== */
+
+@keyframes slideLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+.slide-left{
+    animation:slideLeft .8s ease both;
+}
+
+/* =====================================
+   SLIDE RIGHT
+===================================== */
+
+@keyframes slideRight{
+
+    from{
+        opacity:0;
+        transform:translateX(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+.slide-right{
+    animation:slideRight .8s ease both;
+}
+
+/* =====================================
+   GOLD SHIMMER
+===================================== */
+
+@keyframes goldShimmer{
+
+    0%,
+    100%{
+        filter:brightness(1);
+    }
+
+    50%{
+        filter:brightness(1.08);
+    }
+
+}
+
+.gold-shimmer{
+    animation:goldShimmer 10s ease-in-out infinite;
+}
+
+/* =====================================
+   FLOAT
+===================================== */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.float{
+    animation:float 5s ease-in-out infinite;
+}
+
+/* =====================================
+   HOVER LIFT
+===================================== */
+
+.hover-lift{
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.hover-lift:hover{
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(10,37,64,.14);
+}
+
+/* =====================================
+   BUTTON PRESS
+===================================== */
+
+.button-press{
+    transition:
+        transform .2s ease;
+}
+
+.button-press:active{
+    transform:scale(.97);
+}
+
+/* =====================================
+   REDUCED MOTION
+===================================== */
+
+@media (prefers-reduced-motion: reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
