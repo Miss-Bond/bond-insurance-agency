@@ -345,36 +345,42 @@
     }
 }
 /* =====================================
-   MOBILE ADVISOR SECTION FIX
+   MOBILE ADVISOR PORTRAIT POSITION
 ===================================== */
 
 @media(max-width:700px){
 
     .advisor-grid{
-        display:grid !important;
         grid-template-columns:1fr !important;
         gap:35px !important;
     }
 
     .advisor-image-wrap{
-        display:block !important;
         width:100% !important;
         max-width:340px;
         margin:0 auto !important;
     }
 
-    .advisor-image-wrap img,
-    .hero-advisor{
-        display:block !important;
-        width:100% !important;
-        height:auto !important;
-        max-width:100% !important;
+    .advisor-signature-frame{
+        width:100%;
+        max-width:340px;
+        margin:0 auto;
+
+        overflow:hidden;
     }
 
-    .advisor-section{
-        padding-top:60px !important;
-        padding-bottom:90px !important;
-        overflow:visible !important;
+    .hero-advisor{
+        display:block !important;
+
+        width:100% !important;
+        height:auto !important;
+
+        margin:0 auto !important;
+
+        object-fit:contain !important;
+        object-position:center top !important;
+
+        transform:none !important;
     }
 
 }
