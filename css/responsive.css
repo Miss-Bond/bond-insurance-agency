@@ -344,3 +344,37 @@
         scroll-behavior:auto;
     }
 }
+/* =====================================
+   MOBILE ADVISOR SECTION FIX
+===================================== */
+
+@media(max-width:700px){
+
+    .advisor-grid{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        gap:35px !important;
+    }
+
+    .advisor-image-wrap{
+        display:block !important;
+        width:100% !important;
+        max-width:340px;
+        margin:0 auto !important;
+    }
+
+    .advisor-image-wrap img,
+    .hero-advisor{
+        display:block !important;
+        width:100% !important;
+        height:auto !important;
+        max-width:100% !important;
+    }
+
+    .advisor-section{
+        padding-top:60px !important;
+        padding-bottom:90px !important;
+        overflow:visible !important;
+    }
+
+}
