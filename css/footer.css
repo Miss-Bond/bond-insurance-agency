@@ -205,6 +205,13 @@
         text-align:center;
     }
 
+   /* Make footer section headings white */
+.site-footer h3,
+.site-footer h4,
+.footer-title {
+    color: #ffffff !important;
+}
+
     .site-footer .footer-bottom-content > div{
         justify-content:center;
         flex-wrap:wrap;
