@@ -236,8 +236,8 @@
     .hero-advisor{
     height:102%;
     bottom:55px;
-    left:50%;
-    transform:translateX(-50%);
+    left:10%;
+    transform:translateX(-10%);
 
     }
 
