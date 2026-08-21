@@ -234,7 +234,11 @@
     }
 
     .hero-advisor{
-        height:102%;
+    height:102%;
+    bottom:55px;
+    left:50%;
+    transform:translateX(-50%);
+
     }
 
     .bond-location{
