@@ -228,25 +228,45 @@
 @media(max-width:650px){
 
     .bond-signature-frame{
+        position:relative;
+
         width:100%;
         max-width:390px;
         height:500px;
+
+        margin:0 auto;
+
+        overflow:hidden;
     }
 
     .hero-advisor{
-    height:102%;
-    bottom:55px;
-    left:10%;
-    transform:translateX(-10%);
+        position:absolute;
 
+        left:50% !important;
+        right:auto !important;
+
+        top:auto !important;
+        bottom:40px !important;
+
+        width:auto !important;
+        max-width:none !important;
+
+        height:102% !important;
+
+        transform:translateX(-50%) !important;
+
+        object-fit:contain;
     }
 
     .bond-location{
+        left:50%;
         bottom:18px;
 
         width:calc(100% - 46px);
 
         padding:15px 17px;
+
+        transform:translateX(-50%);
     }
 
     .bond-location strong{
@@ -256,6 +276,7 @@
     .bond-location span{
         font-size:12px;
     }
+
 }
 
 /* =====================================
