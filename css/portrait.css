@@ -300,6 +300,17 @@
     }
 
 }
+/* Second advisor portrait only */
+@media(max-width:650px){
+
+    .advisor-section .advisor-section-photo{
+        left:50% !important;
+        bottom:0 !important;
+        height:100% !important;
+        transform:translateX(-50%) !important;
+    }
+
+}
 
 /* =====================================
    ACCESSIBILITY
