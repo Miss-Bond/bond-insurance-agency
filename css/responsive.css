@@ -381,19 +381,20 @@
     .advisor-section .advisor-image-wrap .hero-advisor{
         position:absolute !important;
 
-        left:auto !important;
+        left:47% !important;
         right:auto !important;
 
         bottom:0 !important;
 
         width:auto !important;
         max-width:none !important;
-        height:90% !important;
+        height:96% !important;
 
         margin:0 !important;
 
         transform:translateX(-50%) !important;
     }
+
 
 }
 
