@@ -146,20 +146,23 @@
     }
 
     .hero-advisor{
-        position:absolute;
-        left:50% !important;
-        right:auto !important;
-        top:auto !important;
-        bottom:0 !important;
+    position:absolute !important;
 
-        width:auto !important;
-        max-width:none !important;
-        height:100% !important;
+    left:0 !important;
+    right:0 !important;
+    top:auto !important;
+    bottom:0 !important;
 
-        transform:translateX(-50%) !important;
-        object-fit:contain;
-    }
+    width:auto !important;
+    max-width:none !important;
+    height:100% !important;
 
+    margin:0 auto !important;
+
+    transform:none !important;
+
+    object-fit:contain !important;
+}
     .bond-location{
         left:50%;
         bottom:18px;
