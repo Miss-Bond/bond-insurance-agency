@@ -381,7 +381,7 @@
     .advisor-section .advisor-image-wrap .hero-advisor{
         position:absolute !important;
 
-        left:47% !important;
+        left:auto !important;
         right:auto !important;
 
         bottom:0 !important;
