@@ -376,7 +376,7 @@
    SECOND ADVISOR PORTRAIT - MOBILE ONLY
 ===================================== */
 
-@media(max-width:700px){
+@media(max-width:650px){
 
     .advisor-section .advisor-image-wrap .hero-advisor{
         position:absolute !important;
