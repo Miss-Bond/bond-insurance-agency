@@ -310,13 +310,13 @@
 .advisor-section-photo{
     height:96% !important;
 
-    left:-24px !important;
+    left:24px !important;
     right:24px !important;
 
     bottom:0 !important;
 
     margin:0 auto !important;
-    transform:-54 !important;
+    transform:-50 !important;
 }
 
 }
